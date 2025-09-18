@@ -1,36 +1,334 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&display=swap');
 
-
-header {
-    background-color: rgb(255, 85, 0);
+*{
+    margin: 0;
+    padding: 0;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-    gap: 1em;
-}    
 
-nav  {
-    display: flex;
-    flex-direction: row;
+
+nav li, a {
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Baloo 2';
+    color: white;
+    font-weight: 700;
+}
+
+a img {
     align-items: center;
 }
 
+main {
+    font-family: 'Baloo 2';
+}
 
-li, a {
-    text-decoration: none;
-    font-family: "Baloo 2";
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.eerste-section {
+    background-image: url("images/background.jpg");
+    padding: 10em;
+    background-size: 200%;
+}
+
+.eerste-section h1 {
+    font-size: 48px;
     font-weight: 700;
     color: white;
+    text-align: center;
+
 }
 
-li img {
+.eerste-section p {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+.cta-button {
+    background-color: white;
+    border-radius: 20px;
+    color: black;
+    padding: 0.5em 1em;
+}
+
+.bts-button {
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 20px;
+    color: white;
+    padding: 0.5em 1em;
+}
+
+.products h2 {
+    padding: 2em;
+    color: rgb(255, 85, 0);
+    font-size: 30px;
+    text-align: center;
+}
+
+.products article{
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+    align-items: center;
+    justify-items: center;
+}
+
+.products article div {
+    border-radius: 20px;
+    padding: 2em;
+    color: white;
+    text-align: center;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 300px;
+}
+
+.products article img {
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 150px;
+}
+
+.products article:nth-of-type(1) div {
+    background-color: rgb(0, 64, 0);
+}
+
+
+
+.products article:nth-of-type(2) div {  
+    background-color: rgb(255, 0, 128);
+}
+
+.products article:nth-of-type(3) div {
+    background-color: rgb(255, 98, 0);
+}
+
+.products article:nth-of-type(4) div {
+    background-color: rgb(255, 0, 128);
+}
+
+
+
+.bestel-button {
+    background-color: white;
+    color: rgb(255, 85, 0);
+    border-radius: 20px;
+    padding: .5em 1em;
+    width: max-content;
+    display: block;
+    margin: 1rem auto;
+    
+}
+
+.horizontaal {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background-color: rgb(211, 211, 213);
+    border-radius: 20px;
+    padding: .5em;
+}
+
+.horizontaal img{
+    width: 65vh;
+    border-radius: 20px;
+}
+
+.verticaal {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    background-color: white;
+    border-radius: 20px;
+    text-align: center;
+    padding: 1em;
+}
+
+.verticaal h2 {
+    color: rgb(255, 106, 0);
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.verticaal p {
+    font-weight: 700;
+    color: rgb(139, 139, 139);
+}
+
+
+
+.button-row {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+}
+
+.background {
+    background-image: url("images/background.jpg");
+    padding: 5em;
+    background-size: 200%;
+    margin: 2em;
+    border-radius: 20px;
+}
+
+.background h2 {
+    color:white;
+    font-size: 50px;
+}
+
+.details {
+    color: black;
+    background-color: rgb(228, 228, 228);
+    padding: 2em;
+    border-radius: 20px;
+}
+
+details p {
+    font-weight: 400;
+    color: black;
+}
+
+summary {
+    font-weight: 700;
+}
+
+
+
+
+/*************/
+/* DE HEADER */
+/*************/
+header {
+    background-color: rgb(255, 111, 0);
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 1em;
+  
+}
+
+nav {
+    flex-grow: 1;
+
+}
+
+header li:nth-last-of-type(2) {
+    margin-left: auto;
+    background-color: white;
+    padding: .5em;
+    border-radius: 20px;
+}
+header li:nth-last-of-type(1) {
+    background-color: rgb(255, 0, 157);
+    padding: .5em;
+    border-radius: 20px;
+}
+
+header img {
     width: 100px;
 }
 
-img {
-    width: 100px;
+header button {
+    appearance: none;
+    border: none;
+    background-color: transparent;
+    height: 1rem;
+    width: 1rem;
 }
 
+header button svg {
+    height: 100%;
+    width: 100%;
+}
+
+/***************/
+/* MENU BUTTON */
+/***************/
+header > button {
+  order: -1;
+}
+
+/************/
+/* HET MENU */
+/************/
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  translate: 100%;
+  display: none;
+}
+
+/* als menu open is */
+nav.toonMenu {
+  display: block;
+  translate: 0%;
+  transition: 0.3s;
+}
+
+
+/****************************************************************/
+/* styling voor de header als de browser minimaal 38em breed is */
+/****************************************************************/
+@media (min-width:38em) {
+  header > button {
+    display: none;
+  }
+  
+  nav {
+    position: static;
+    translate: unset;
+    padding: 0;
+    background: none;
+    display: block;
+  }
+  
+  nav button {
+    display: none;
+  }
+  
+  nav ul {
+    display: flex;
+    gap: 1em; 
+  }
+  
+  nav a {
+    display: flex;
+    flex-direction: column;
+    border: none;
+  }
+  
+  header > a:last-of-type {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+
+/****************************************************************/
+/* styling voor de header als de browser minimaal 57em breed is */
+/****************************************************************/
+@media (min-width:57em) {
+  header > a:last-of-type,
+  nav a {
+    display: flex;
+    flex-direction: row;
+  }
+}
