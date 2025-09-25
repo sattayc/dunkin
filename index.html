@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="nl">
 <head>
   <meta charset="utf-8">
@@ -6,20 +6,22 @@
   <title>Dunkin' Donuts</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="index">
 
   <header>
+    <!-- skip link -->
+    <a href="#main-content" class="skiplink">Naar hoofdinhoud</a>
     <!-- Logo -->
     <a href="./index.html">
       <img src="images/dunkin-logo.png" alt="Dunkin homepagina">
     </a>
 
    <!-- Eigen hamburger button -->
-    <button aria-controls="primary-nav" aria-expanded="false" aria-label="Open menu">
-      <?xml version="1.0" encoding="utf-8"?>
+    <button aria-hidden="true">
+      
       <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
       <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <g id="Menu / Menu_Duo_LG">
+      <g>
       <path id="Vector" d="M3 15H21M3 9H21" stroke="#000000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
       </g>
       </svg>
@@ -27,7 +29,14 @@
 
   <!-- Nav -->
     <nav aria-hidden="true">
-    <button class="menu-close" aria-label="Sluit menu"></button>
+    <button aria-label="Sluit menu">
+      
+      <svg width="800px" height="800px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect width="24" height="24" fill="white"/>
+      <path d="M7 17L16.8995 7.10051" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M7 7.00001L16.8995 16.8995" stroke="#000000" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
       <ul>
         <li><a href="#">Store Finder</a></li>
         <li><a href="./over-ons.html">About Us</a></li>
@@ -39,71 +48,78 @@
     </nav>
   </header>
 
-  <main>
-    <section class="eerste-section">
-      <h1>BACK TO SCHOOL, BACK TO DUNKIN'</h1>
+  <main id="#main-content">
+    <!-- 1e section -->
+    <section>
+      <h1>BACK TO SCHOOL, BACK TO 
+        <span>D</span><span>U</span><span>N</span><span>K</span><span>I</span><span>N</span><span>'</span>
+      </h1>
       <p>JE FAVORIETEN, VOOR MINDER</p>
-      <div class="button-row">
-        <a href="#" class="cta-button">Bestel nu</a>
-        <a href="#" class="bts-button">Bts deals</a>
+      <div>
+        <a href="#">Bestel nu</a>
+        <a href="#">Bts deals</a>
       </div>
     </section>
 
-    <section class="products">
+    <!-- 2de section -->
+    <section>
       <h2>PROBEER ONZE DUNKIN' BESTSELLERS</h2>
         <article>
           <div>
-          <h3>Dubai Chocolate</h3>
-          <p>Gevuld met pistache en knafeh.</p>
-          <a href="#" class="bestel-button">Bestel nu</a>
+            <h3>Dubai Chocolate</h3>
+            <p>Gevuld met pistache en knafeh.</p>
+            <a href="#">Bestel nu</a>
           </div>
           <img src="images/dubai.png" alt="Dubai chocolate donut">
         </article>
 
         <article>
           <div>
-          <h3>Nutella Swirl</h3>
-          <p>Gevuld met Nutella en Nutella-glazuur.</p>
-          <a href="#" class="bestel-button">Bestel nu</a>
+            <h3>Nutella Swirl</h3>
+            <p>Gevuld met Nutella en Nutella-glazuur.</p>
+            <a href="#">Bestel nu</a>
           </div>
           <img src="images/nutella.png" alt="Nutella swirl donut">
         </article>
 
         <article>
-          <div><h3>White Chocolate Oreo</h3>
-          <p>Gevuld met witte chocolade & bedekt met Oreo-kruimels.</p>
-          <a href="#" class="bestel-button">Bestel nu</a>
+          <div>
+            <h3>White Chocolate Oreo</h3>
+            <p>Gevuld met witte chocolade & bedekt met Oreo-kruimels.</p>
+            <a href="#">Bestel nu</a>
           </div>
           <img src="images/oreo.png" alt="White chocolate oreo donut">
         </article>
 
         <article>
           <div>
-          <h3>Dunkin' Original Glazed</h3>
-          <p>De klassieker van alle klassiekers!</p>
-          <a href="#" class="bestel-button">Bestel nu</a>
+            <h3>Dunkin' Original Glazed</h3>
+            <p>De klassieker van alle klassiekers!</p>
+            <a href="#">Bestel nu</a>
           </div>
           <img src="images/glazed.png" alt="Dunkin original glazed">
         </article>
     </section>
 
-    <section class="horizontaal">
-      <img src="images/vegan.png" alt="vegan donuts">
-      <article class="verticaal">
+    <!-- 3de section -->
+    <section>
+      <img src="images/vegan.png" alt="vegan donuts bestaan uit XOXO donut, Strawberry creme donut, Specelicious heart donut en Ms. Love donut">
+      <article>
         <h2>ONTDEK ONZE VEGAN COLLECTIE</h2>
         <p>Verlang je naar iets zoets en plantaardigs? 
         Onze vegan donuts zijn de perfecte traktatie! Met dezelfde heerlijke smaak en luchtige 
         textuur die je kent en waardeert, zijn deze donuts 100% veganistisch. Probeer er vandaag nog een!</p>
-      <div class="button-row">
-        <a href="#" class="button">Bestel nu</a>
+      <div>
+        <a href="#">Bestel nu</a>
         <a href="#">Allergieën & Ingrediënten</a>
       </div>
     </article> 
     </section>
 
-    <section class="background">
+    <!-- 4de section -->
+    <section>
       <h2>DUNKIN’ DELIVERS</h2>
-      <div class="details">
+      <div>
       <details>
           <summary>Waar kan ik verse donuts bestellen?</summary>
           <p>
@@ -125,17 +141,26 @@
       </div>
     </section>
   
+    <!-- 5de section -->
     <section>
-      <h2>Meld je aan voor onze nieuwsbrief!</h2>
+      <h2>Meld je aan voor onze nieuwsbrief! </h2>
       <p>Ontvang het laatste nieuws, aanbiedingen en exclusieve promoties.</p>
-      <input type="email">
-      <button type="submit">Abonneren</button>
+      <form>
+        <label for="name">Naam</label>
+          <input type="text" id="name" placeholder="je naam" required>
+        <label for="email">Email</label>
+          <input type="email" id="email" placeholder="name@dunkin.nl" required>
+        <label for="tel">Telefoon nummer</label>
+          <input type="tel" id="tel" placeholder="+31" required>
+        <input type="submit">
+      </form>
+    </section>
   </main>
 
   <footer>
-    <p>© 2025 DD IP Holder</p>
     <nav>
       <ul>
+        <li><a href="#">© 2025 DD IP Holder</a></li>
         <li><a href="#">Winkelzoeker</a></li>
         <li><a href="#">Over Dunkin'</a></li>
         <li><a href="#">Instagram</a></li>
@@ -145,6 +170,7 @@
       </ul>
     </nav>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
