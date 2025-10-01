@@ -462,6 +462,7 @@ input {
 	padding: .5em;
 	border-radius:10px;
 	border:solid .1em var(--neutral-color2);
+    font-size: 1em;
 }
 
 input::placeholder {
