@@ -84,7 +84,7 @@ Responsive
 
   ### Stand van zaken
   Het is mij gelukt om html te schrijven, maar het is nog voor mij moeilijk om de header responsive te maken, want nu gaat de kleur van de header niet mee als het scherm kleiner wordt, ook de laatste twee link van header moet ook helemaal aan het einde zijn apart van anderen. Link naar github: https://sattayc.github.io/dunkin/ 
-  <br><img src="./readme-images/week2html.png" width="800px" alt="screenshots van het scherm(alleen met html) en html codes"
+  <br><img src="./readme-images/week2html.png" width="800px" alt="screenshots van het scherm(alleen met html) en html codes">
 
   ### Agenda voor meeting
   samen met je groepje opstellen
@@ -171,7 +171,7 @@ Responsive
   Ik heb mijn website responsive kunnen maken: scherm grootte, reduce animation, skip link, dark mode.
   Vervolgens heb ik de requested formulier ook kunnen toevoegen, dus als je requested veld niet hebt ingevuld krijg je trigger wanneer je op submit button klikt, en als je niet goed hebt ingevuld is de border van die veld rood, als het goed is dan groen.
   Ik heb grid ook gebruikt bij beide pagina.
- <img src="./readme-images/week4.png" width="800px" alt="screenshots van responsive layouts en form>
+ <img src="./readme-images/week4.png" width="800px" alt="screenshots van responsive layouts en form">
 
   ### Agenda voor meeting
   samen met je groepje opstellen
